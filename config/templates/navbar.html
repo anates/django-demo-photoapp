@@ -1,7 +1,7 @@
 <!-- templates/navbar.html -->
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="{% url 'photo:list' %}">Photo App</a>
+      <a class="navbar-brand" href="{% url 'photo:list' %}">Image Viewer - Demo SINTEF</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -24,7 +24,7 @@
             <a class="nav-link active" href="{% url 'photo:create' %}">Add a photo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Hi {{user.username}}</a>
+            <a class="nav-link active" href="#">Hello, {{user.username}}</a>
           </li>
           {% else %}
   
